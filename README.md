@@ -35,8 +35,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-[→ View interactive Editorial](https://slictor.github.io/portfolio-hub/Editorial.html)
-
-[→ View interactive Magazine](https://slictor.github.io/portfolio-hub/Magazine.html)
-
-[→ View interactive Swiss](https://slictor.github.io/portfolio-hub/Swiss.html)
+[→ View interactive Wireframe](https://slictor.github.io/portfolio-hub/frame1.html)
