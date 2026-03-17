@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Portfölj-Hub – Alt 2: Light Magazine</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --bg: #faf8f3;
+        --fg: #1c1917;
+        --fg-mid: #57534e;
+        --fg-soft: #a8a29e;
+        --accent: #e85d26;
+        --accent-pale: #fef0e8;
+        --surface: #ffffff;
+        --border: #e7e5e0;
+      }
+      body {
+        font-family: "Outfit", sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+        min-height: 100vh;
+      }
+
+      header {
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 0 4rem;
+      }
+      .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .logo span {
+        color: var(--accent);
+      }
+      .header-badge {
+        font-size: 11px;
+        font-weight: 500;
+        padding: 6px 14px;
+        background: var(--accent-pale);
+        color: var(--accent);
+        border-radius: 20px;
+        letter-spacing: 0.04em;
+      }
+      .header-bottom {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 0;
+      }
+      .nav-link {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--fg-mid);
+        text-decoration: none;
+      }
+      .nav-link:hover {
+        color: var(--fg);
+      }
+      .search {
+        margin-left: auto;
+      }
+      .search input {
+        font-family: "Outfit", sans-serif;
+        font-size: 13px;
+        padding: 7px 14px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: var(--bg);
+        color: var(--fg);
+        width: 200px;
+      }
+
+      .hero-strip {
+        background: var(--fg);
+        color: var(--bg);
+        padding: 4rem 4rem 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: end;
+      }
+      .hero-left {
+      }
+      .hero-kicker {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 1rem;
+      }
+      .hero-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        font-weight: 400;
+        line-height: 1.1;
+        margin-bottom: 1.25rem;
+      }
+      .hero-title em {
+        font-style: italic;
+      }
+      .hero-desc {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #d6d3cd;
+        max-width: 400px;
+      }
+      .hero-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+      .stat-block {
+        border-top: 1px solid #3a3835;
+        padding-top: 1rem;
+      }
+      .stat-big {
+        font-family: "Playfair Display", serif;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 1;
+      }
+      .stat-big span {
+        color: var(--accent);
+      }
+      .stat-desc {
+        font-size: 12px;
+        color: #9e9b96;
+        margin-top: 4px;
+        line-height: 1.5;
+      }
+
+      .filters {
+        background: var(--surface);
+        padding: 1rem 4rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        border-bottom: 1px solid var(--border);
+        flex-wrap: wrap;
+      }
+      .filters-label {
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--fg-soft);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-right: 0.5rem;
+      }
+      .pill {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 5px 16px;
+        border-radius: 20px;
+        border: 1.5px solid var(--border);
+        background: transparent;
+        cursor: pointer;
+        color: var(--fg-mid);
+        transition: all 0.15s;
+      }
+      .pill:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      .pill.active {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: white;
+      }
+
+      .content {
+        padding: 3rem 4rem;
+      }
+      .section-title {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--fg-soft);
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .section-title::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--border);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.5rem;
+      }
+      .card {
+        background: var(--surface);
+        border-radius: 16px;
+        border: 1px solid var(--border);
+        overflow: hidden;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+        cursor: pointer;
+      }
+      .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+      }
+      .card-top {
+        height: 80px;
+        display: flex;
+        align-items: flex-end;
+        padding: 1.25rem;
+        position: relative;
+      }
+      .card-avatar {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 3px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+        position: absolute;
+        bottom: -28px;
+        left: 1.25rem;
+      }
+      .card-body {
+        padding: 2.5rem 1.25rem 1.25rem;
+      }
+      .card-name {
+        font-family: "Playfair Display", serif;
+        font-size: 19px;
+        font-weight: 700;
+        margin-bottom: 3px;
+      }
+      .card-role {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--fg-mid);
+        letter-spacing: 0.03em;
+      }
+      .card-divider {
+        height: 1px;
+        background: var(--border);
+        margin: 1rem 0;
+      }
+      .card-bio {
+        font-size: 13px;
+        line-height: 1.65;
+        color: var(--fg-mid);
+      }
+      .card-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 1rem;
+      }
+      .tag {
+        font-size: 11px;
+        font-weight: 500;
+        padding: 3px 10px;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        color: var(--fg-mid);
+      }
+      .tag.active-tag {
+        background: var(--accent-pale);
+        border-color: #fdd0b8;
+        color: var(--accent);
+      }
+      .card-actions {
+        padding: 1rem 1.25rem;
+        border-top: 1px solid var(--border);
+        display: flex;
+        gap: 8px;
+      }
+      .btn-ghost {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 7px 14px;
+        border-radius: 8px;
+        border: 1.5px solid var(--border);
+        background: transparent;
+        cursor: pointer;
+        color: var(--fg-mid);
+        flex: 1;
+        transition: background 0.15s;
+      }
+      .btn-ghost:hover {
+        background: var(--bg);
+      }
+      .btn-solid {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 7px 14px;
+        border-radius: 8px;
+        border: 1.5px solid var(--accent);
+        background: var(--accent);
+        cursor: pointer;
+        color: white;
+        flex: 1;
+      }
+
+      footer {
+        background: var(--fg);
+        color: var(--bg);
+        padding: 2rem 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      footer p {
+        font-size: 13px;
+        color: #9e9b96;
+      }
+      footer a {
+        font-size: 13px;
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="logo">
+          Portfölj<span>Hub</span>
+          <span
+            style="
+              font-family: &quot;Outfit&quot;, sans-serif;
+              font-size: 13px;
+              font-weight: 400;
+              color: var(--fg-soft);
+            "
+            >by Lexicon 2026</span
+          >
+        </div>
+        <div class="header-badge">12 studenter · Open to Work</div>
+      </div>
+      <div class="header-bottom">
+        <a
+          class="nav-link"
+          href="#"
+          >Alla profiler</a
+        >
+        <a
+          class="nav-link"
+          href="#"
+          >Stack-karta</a
+        >
+        <a
+          class="nav-link"
+          href="#"
+          >Om klassen</a
+        >
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Sök namn, roll, teknik..."
+          />
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-strip">
+      <div class="hero-left">
+        <div class="hero-kicker">Lexicon · Frontend System Development</div>
+        <h1 class="hero-title">Vi är redo.<br /><em>Är du det?</em></h1>
+        <p class="hero-desc">
+          En klass frontendutvecklare med React, TypeScript och Next.js i ryggraden — och nyfikenhet som drivkraft.
+        </p>
+      </div>
+      <div class="hero-right">
+        <div class="stat-block">
+          <div class="stat-big">1<span>2</span></div>
+          <div class="stat-desc">Studenter redo att göra skillnad</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-big">6<span>+</span></div>
+          <div class="stat-desc">Teknologier vi bemästrar</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-big">3</div>
+          <div class="stat-desc">Dagars grupputmaning avklarad</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-big"><span>∞</span></div>
+          <div class="stat-desc">Möjligheter vi söker</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filters">
+      <span class="filters-label">Filtrera:</span>
+      <button
+        class="pill active"
+        onclick="filter(this, 'Alla')"
+      >
+        Alla
+      </button>
+      <button
+        class="pill"
+        onclick="filter(this, 'React')"
+      >
+        React
+      </button>
+      <button
+        class="pill"
+        onclick="filter(this, 'TypeScript')"
+      >
+        TypeScript
+      </button>
+      <button
+        class="pill"
+        onclick="filter(this, 'Next.js')"
+      >
+        Next.js
+      </button>
+      <button
+        class="pill"
+        onclick="filter(this, 'Node.js')"
+      >
+        Node.js
+      </button>
+      <button
+        class="pill"
+        onclick="filter(this, 'UX/Design')"
+      >
+        UX/Design
+      </button>
+    </div>
+
+    <div class="content">
+      <div class="section-title">Våra studenter</div>
+      <div
+        class="grid"
+        id="grid"
+      ></div>
+    </div>
+
+    <footer>
+      <p>Klassens Portfölj-Hub · Lexicon Frontend System Development 2025–2026</p>
+      <a href="#">Kontakta klassen →</a>
+    </footer>
+
+    <script>
+      const students = [
+        {
+          initials: "MK",
+          bgTop: "#d4f577",
+          bgAvatar: "#8ec60a",
+          fg: "#1c1917",
+          name: "Manu K.",
+          role: "Frontend Developer",
+          bio: "Bygger Art Oracle med Next.js och Grok AI. Passionerad om modern React-arkitektur.",
+          tags: ["React", "Next.js", "TypeScript", "Tailwind"],
+        },
+        {
+          initials: "SL",
+          bgTop: "#b7f5e4",
+          bgAvatar: "#0a9e7a",
+          fg: "#1c1917",
+          name: "Sara L.",
+          role: "Frontend + UX",
+          bio: "Kombinerar designtänk med solid kod. CSS-arkitekt och Figma-expert.",
+          tags: ["React", "UX/Design", "Figma", "CSS"],
+        },
+        {
+          initials: "JB",
+          bgTop: "#d9d4fc",
+          bgAvatar: "#6b55e8",
+          fg: "white",
+          name: "Jonas B.",
+          role: "Fullstack-light",
+          bio: "Node-bakgrund som omfamnat React. Driver API-design och backend-integrationer.",
+          tags: ["Node.js", "React", "TypeScript", "REST"],
+        },
+        {
+          initials: "EA",
+          bgTop: "#fde9b5",
+          bgAvatar: "#d4920a",
+          fg: "#1c1917",
+          name: "Elin A.",
+          role: "UI Developer",
+          bio: "Tillgänglighetsspecialist. Varje komponent lever upp till WCAG 2.1 AA.",
+          tags: ["React", "CSS", "UX/Design", "WCAG"],
+        },
+        {
+          initials: "TN",
+          bgTop: "#fdd4e8",
+          bgAvatar: "#c4196e",
+          fg: "white",
+          name: "Tobias N.",
+          role: "Animation Lead",
+          bio: "GSAP-nörd med öga för rörelse. Micro-interactions och scroll-animationer.",
+          tags: ["React", "TypeScript", "GSAP", "Motion"],
+        },
+        {
+          initials: "FO",
+          bgTop: "#c5f5e0",
+          bgAvatar: "#0e8050",
+          fg: "white",
+          name: "Fatima O.",
+          role: "Data + Frontend",
+          bio: "Visualiserar komplex data med Recharts och D3. Gör det svåra begripligt.",
+          tags: ["React", "Node.js", "TypeScript", "D3"],
+        },
+      ];
+      let active = "Alla";
+      function filter(el, val) {
+        document.querySelectorAll(".pill").forEach((p) => p.classList.remove("active"));
+        el.classList.add("active");
+        active = val;
+        render();
+      }
+      function render() {
+        const list = active === "Alla" ? students : students.filter((s) => s.tags.includes(active));
+        document.getElementById("grid").innerHTML = list
+          .map(
+            (s) => `
+    <div class="card">
+      <div class="card-top" style="background:${s.bgTop}">
+        <div class="card-avatar" style="background:${s.bgAvatar};color:${s.fg}">${s.initials}</div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">${s.name}</div>
+        <div class="card-role">${s.role}</div>
+        <div class="card-divider"></div>
+        <div class="card-bio">${s.bio}</div>
+        <div class="card-tags">${s.tags.map((t) => `<span class="tag${t === active && active !== "Alla" ? " active-tag" : ""}">${t}</span>`).join("")}</div>
+      </div>
+      <div class="card-actions">
+        <button class="btn-ghost">LinkedIn</button>
+        <button class="btn-solid">Portfolio →</button>
+      </div>
+    </div>`,
+          )
+          .join("");
+      }
+      render();
+    </script>
+  </body>
+</html>
