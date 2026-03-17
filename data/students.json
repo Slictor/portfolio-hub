@@ -1,0 +1,62 @@
+[
+  {
+    "id": "01",
+    "name": "Elin Eurenius",
+    "image": "",
+    "title": "UX-Designer + Frontend Developer",
+    "shortBio": "I’m a versatile digital creative with expertise in UX design, graphic design, marketing, content creation and frontend development.",
+    "stack": ["JavaScript", "UX-design", "Marketing", "Webbutveckling", "GUI"],
+    "competenceTags": ["Frontend", "UX/Design"],
+    "links": {
+      "github": "https://github.com/fneel",
+      "linkedin": "https://www.linkedin.com/in/elineurenius/",
+      "portfolio": ""
+    },
+    "order": 1
+  },
+  {
+    "id": "02",
+    "name": "Manu St. Hill",
+    "image": "",
+    "title": "Systemutvecklare .NET + Frontend Developer",
+    "shortBio": "Nyexaminerad systemutvecklare inom .NET som nu fördjupar mig i frontend-utveckling genom Lexicon IT Proffs bootcamp",
+    "stack": ["C#", ".NET", "React", "TypeScript", "JavaScript", "Azure DevOps", "REST", "GraphQL", "Git"],
+    "competenceTags": ["Frontend", "Backend", "Fullstack"],
+    "links": {
+      "github": "https://github.com/ManSaint",
+      "linkedin": "https://www.linkedin.com/in/manu-st-hill-52a28b2a5/",
+      "portfolio": ""
+    },
+    "order": 2
+  },
+  {
+    "id": "03",
+    "name": "Victor Hallstensson",
+    "image": "",
+    "title": "",
+    "shortBio": "",
+    "stack": [],
+    "competenceTags": [],
+    "links": {
+      "github": "https://github.com/Slictor/",
+      "linkedin": "",
+      "portfolio": ""
+    },
+    "order": 3
+  },
+  {
+    "id": "04",
+    "name": "Zahra Parhizkari",
+    "image": "",
+    "title": "Fullstack Developer",
+    "shortBio": "System and Full-Stack Developer with broad technical expertise and strong problem-solving skills",
+    "stack": ["JavaScript", "TypeScript", "C#", ".NET", "ASP.NET Core", "React", "Next.js", "Node.js", "Databashantering"],
+    "competenceTags": ["Fullstack"],
+    "links": {
+      "github": "https://github.com/zahra64",
+      "linkedin": "https://www.linkedin.com/in/zahra-parhizkari-9967101b7/",
+      "portfolio": ""
+    },
+    "order": 4
+  }
+]
