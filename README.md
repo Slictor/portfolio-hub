@@ -35,8 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-[→ View interactive wireframe](https://slicktor.github.io/art-oracle/frame1.html)
+[→ View interactive wireframe](https://slictor.github.io/art-oracle/frame1.html)
 
-[→ View interactive wireframe](https://slicktor.github.io/art-oracle/frame2.html)
+[→ View interactive wireframe](https://slictor.github.io/art-oracle/frame2.html)
 
-[→ View interactive wireframe](https://slicktor.github.io/art-oracle/frame3.html)
+[→ View interactive wireframe](https://slictor.github.io/art-oracle/frame3.html)
