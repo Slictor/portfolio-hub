@@ -1,42 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗂️ Klassens Portfölj-Hub
 
-## Getting Started
+En gemensam landningssida för klassen där besökare kan se alla studentprofiler och filtrera på kompetenser.
 
-First, run the development server:
+Byggt med **Next.js**, **TypeScript** och **Tailwind CSS**.
+
+---
+
+## 🎨 Wireframe-alternativ
+
+Tre designförslag att rösta på — klicka för live-preview:
+
+| # | Namn | Stil |
+|---|------|------|
+| 1 | **Editorial Dark** | Mörkt tema, serif-typografi, limegrön accent |
+| 2 | **Light Magazine** | Ljust varmt tema, runda kort med färgband |
+| 3 | **Minimal Swiss** | Sidebar-layout, blå accent, app-liknande känsla |
+
+> 🔗 **[→ Wireframe 1: Editorial Dark](https://slictor.github.io/portfolio-hub/frame1.html)**
+
+> 🔗 **[→ Wireframe 2: Light Magazine](https://slictor.github.io/portfolio-hub/frame2.html)**
+
+> 🔗 **[→ Wireframe 3: Minimal Swiss](https://slictor.github.io/portfolio-hub/frame3.html)**
+
+Källfilerna finns under [`docs/`](./docs/).
+
+---
+
+## 🚀 Kom igång
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Öppna [http://localhost:3000](http://localhost:3000) i webbläsaren.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
+- [Next.js](https://nextjs.org) — React-ramverk
+- TypeScript — typsäker kod
+- Tailwind CSS — styling
+- Biome — linting & formatting
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Bidra
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-[→ View interactive wireframe](https://slictor.github.io/portfolio-hub/frame1.html)
-
-[→ View interactive wireframe](https://slictor.github.io/portfolio-hub/frame2.html)
-
-[→ View interactive wireframe](https://slictor.github.io/portfolio-hub/frame3.html)
+Ingen pushar direkt till `main`. Använd feature-branches och Pull Requests.
