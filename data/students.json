@@ -1,8 +1,10 @@
 [
   {
+    "id": "1",
     "initials": "EE",
     "avatarBg": "#ccc",
     "name": "Elin Eurenius",
+    "image": "",
     "role": "UX-Designer + Frontend Developer",
     "bio": "I’m a versatile digital creative with expertise in UX design, graphic design, marketing, content creation and frontend development. I create everything from engaging social media content to web design - always with a strong focus on UX. Experienced in B2C, B2B, and B2G. I have solid skills in frontend development and work confidently with HTML, CSS, and JavaScript, primarily using React and Angular.",
     "tags": ["JavaScript", "UX-design", "Marketing", "Webbutveckling", "GUI", "Frontend", "UX/Design"],
@@ -12,9 +14,11 @@
     "github": "https://github.com/fneel"
   },
   {
+    "id": "2",
     "initials": "MS",
     "avatarBg": "#ccc",
     "name": "Manu St. Hill",
+    "image": "",
     "role": "Systemutvecklare .NET + Frontend Developer",
     "bio": "Nyexaminerad systemutvecklare inom .NET som nu fördjupar mig i frontend-utveckling genom Lexicon IT Proffs bootcamp. Jag kombinerar en solid backend-grund i C# och .NET med växande frontend-kompetens i React, TypeScript och Next.js. Genom praktik och anställning på Post- och telestyrelsen (PTS) har jag arbetat hands-on med:\n\n- React-komponentutveckling och tillgänglighetsanpassning enligt WCAG\n- CI/CD-processer i Azure DevOps\n- API-utveckling för Keycloak-integration\n- Automatisering av arbetsflöden i Azure DevOps",
     "tags": ["C#", ".NET", "React", "TypeScript", "JavaScript", "Azure DevOps", "REST", "GraphQL", "Git", "Frontend", "Backend", "Fullstack"],
@@ -24,9 +28,11 @@
     "github": "https://github.com/ManSaint"
   },
   {
+    "id": "3",
     "initials": "VH",
     "avatarBg": "#ccc",
     "name": "Victor Hallstensson",
+    "image": "",
     "role": "",
     "bio": "",
     "tags": [],
@@ -36,9 +42,11 @@
     "github": "https://github.com/Slictor/"
   },
   {
+    "id": "4",
     "initials": "ZP",
     "avatarBg": "#ccc",
-    "name": "Zahra p",
+    "name": "Zahra Parhizkari",
+    "image": "",
     "role": "Fullstack Developer",
     "bio": "Jag är system och fullstackutvecklare med bred teknisk kompetens inom både frontend och backend och lär mig snabbt. Jag arbetar strukturerat, är lösningsorienterad och trivs med att arbeta både självständigt och i agila team med Git, Scrum och effektiv versionshantering.",
     "tags": ["JavaScript", "TypeScript", "C#", ".NET", "ASP.NET Core", "React", "Next.js", "Node.js", "Databashantering", "Fullstack"],
