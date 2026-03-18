@@ -1,4 +1,5 @@
 export interface StudentProfile {
+  id:number;
   initials: string;
   avatarBg: string;
   name: string;
