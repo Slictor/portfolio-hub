@@ -7,18 +7,35 @@ import ProfileGrid from "@/components/ProfileGrid";
 import ProfileCard from "@/components/ProfileCard";
 import { StudentProfile } from "@/types/students";
 import studentsData from "@/data/students.json";
+import FilterSection from "@/components/filterSection";
 
 const students = studentsData as StudentProfile[];
 
 export default function Home() {
   const [selectedStudent, setSelectedStudent] = useState<StudentProfile | null>(null);
+  const [selectedFilter, setSelectedFilter] = useState("All");
+
+const filters = ["All", "Frontend", "Backend", "Fullstack", "UX/Design"];
+
+const filteredData =
+  selectedFilter === "All"
+    ? students
+    : students.filter((student) =>
+        student.competenceTags?.includes(selectedFilter)
+      );
 
   return (
     <>
       <Hero />
-      <section className="px-6 py-16 max-w-7xl mx-auto">
+         <section className="px-6 py-16 max-w-7xl mx-auto">
+        <FilterSection
+          filters={filters}
+          selected={selectedFilter}
+          onChange={setSelectedFilter}
+        />
+  
         <ProfileGrid>
-          {students.map((student) => (
+          {filteredData.map((student) => (
             <button
               key={student.id}
               onClick={() => setSelectedStudent(student)}
