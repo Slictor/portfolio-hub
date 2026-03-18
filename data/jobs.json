@@ -1,0 +1,62 @@
+[
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000001",
+    "company": "Spotify",
+    "role": "Frontend Developer",
+    "link": "https://www.lifeatspotify.com/jobs",
+    "description": "Söker en frontend-utvecklare med erfarenhet av React och TypeScript för att jobba med deras webbspelare.",
+    "category": "frontend",
+    "status": "active",
+    "postedBy": "Anna",
+    "createdAt": "2026-03-10T09:00:00.000Z",
+    "updatedAt": "2026-03-10T09:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-2222-4000-8000-000000000002",
+    "company": "Klarna",
+    "role": "Fullstack Engineer",
+    "link": "https://www.klarna.com/careers/",
+    "description": "Fullstack-roll med fokus på Node.js och React. Hybridkontor i Stockholm.",
+    "category": "fullstack",
+    "status": "applied",
+    "postedBy": "Erik",
+    "createdAt": "2026-03-12T14:30:00.000Z",
+    "updatedAt": "2026-03-12T14:30:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-3333-4000-8000-000000000003",
+    "company": "IKEA",
+    "role": "Junior Frontend Developer",
+    "link": "https://www.ikea.com/se/sv/this-is-ikea/work-with-us/",
+    "description": "IKEA söker en junior frontendutvecklare till sitt digitala team i Malmö. Bra för nyexaminerade!",
+    "category": "frontend",
+    "status": "active",
+    "postedBy": "Sara",
+    "createdAt": "2026-03-14T10:15:00.000Z",
+    "updatedAt": "2026-03-14T10:15:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-4444-4000-8000-000000000004",
+    "company": "Volvo Cars",
+    "role": "Backend Developer (.NET)",
+    "link": "https://www.volvocars.com/se/careers/",
+    "description": "Backend-utvecklare med C# och .NET för connected vehicle-plattformen. Göteborg.",
+    "category": "backend",
+    "status": "interview",
+    "postedBy": "Marcus",
+    "createdAt": "2026-03-08T08:00:00.000Z",
+    "updatedAt": "2026-03-15T11:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-5555-4000-8000-000000000005",
+    "company": "King",
+    "role": "UI Developer",
+    "link": "https://careers.king.com/",
+    "description": "UI-utvecklare till Candy Crush-teamet. Fokus på animationer och spelupplevelse.",
+    "category": "design",
+    "status": "closed",
+    "postedBy": "Anna",
+    "createdAt": "2026-03-01T12:00:00.000Z",
+    "updatedAt": "2026-03-16T09:00:00.000Z"
+  }
+]
