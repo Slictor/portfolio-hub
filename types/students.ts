@@ -1,15 +1,11 @@
 export interface StudentProfile {
-  id: string;
+  initials: string;
+  avatarBg: string;
   name: string;
-  image?: string;
-  title: string;
-  shortBio: string;
-  stack: string[];
+  role: string;
+  bio: string;
+  tags: string[];
   competenceTags: string[];
-  links: {
-    github?: string;
-    linkedin?: string;
-    portfolio?: string;
-  };
-  order: number;
+  linkedIn?: string;
+  portfolio?: string;
 }

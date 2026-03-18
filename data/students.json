@@ -1,62 +1,50 @@
 [
   {
-    "id": "01",
+    "initials": "EE",
+    "avatarBg": "#ccc",
     "name": "Elin Eurenius",
-    "image": "",
-    "title": "UX-Designer + Frontend Developer",
-    "shortBio": "I’m a versatile digital creative with expertise in UX design, graphic design, marketing, content creation and frontend development.",
-    "stack": ["JavaScript", "UX-design", "Marketing", "Webbutveckling", "GUI"],
+    "role": "UX-Designer + Frontend Developer",
+    "bio": "I’m a versatile digital creative with expertise in UX design, graphic design, marketing, content creation and frontend development. I create everything from engaging social media content to web design - always with a strong focus on UX. Experienced in B2C, B2B, and B2G. I have solid skills in frontend development and work confidently with HTML, CSS, and JavaScript, primarily using React and Angular.",
+    "tags": ["JavaScript", "UX-design", "Marketing", "Webbutveckling", "GUI", "Frontend", "UX/Design"],
     "competenceTags": ["Frontend", "UX/Design"],
-    "links": {
-      "github": "https://github.com/fneel",
-      "linkedin": "https://www.linkedin.com/in/elineurenius/",
-      "portfolio": ""
-    },
-    "order": 1
+    "linkedIn": "https://www.linkedin.com/in/elineurenius/",
+    "portfolio": "",
+    "github": "https://github.com/fneel"
   },
   {
-    "id": "02",
+    "initials": "MS",
+    "avatarBg": "#ccc",
     "name": "Manu St. Hill",
-    "image": "",
-    "title": "Systemutvecklare .NET + Frontend Developer",
-    "shortBio": "Nyexaminerad systemutvecklare inom .NET som nu fördjupar mig i frontend-utveckling genom Lexicon IT Proffs bootcamp",
-    "stack": ["C#", ".NET", "React", "TypeScript", "JavaScript", "Azure DevOps", "REST", "GraphQL", "Git"],
+    "role": "Systemutvecklare .NET + Frontend Developer",
+    "bio": "Nyexaminerad systemutvecklare inom .NET som nu fördjupar mig i frontend-utveckling genom Lexicon IT Proffs bootcamp. Jag kombinerar en solid backend-grund i C# och .NET med växande frontend-kompetens i React, TypeScript och Next.js. Genom praktik och anställning på Post- och telestyrelsen (PTS) har jag arbetat hands-on med:\n\n- React-komponentutveckling och tillgänglighetsanpassning enligt WCAG\n- CI/CD-processer i Azure DevOps\n- API-utveckling för Keycloak-integration\n- Automatisering av arbetsflöden i Azure DevOps",
+    "tags": ["C#", ".NET", "React", "TypeScript", "JavaScript", "Azure DevOps", "REST", "GraphQL", "Git", "Frontend", "Backend", "Fullstack"],
     "competenceTags": ["Frontend", "Backend", "Fullstack"],
-    "links": {
-      "github": "https://github.com/ManSaint",
-      "linkedin": "https://www.linkedin.com/in/manu-st-hill-52a28b2a5/",
-      "portfolio": ""
-    },
-    "order": 2
+    "linkedIn": "https://www.linkedin.com/in/manu-st-hill-52a28b2a5/",
+    "portfolio": "",
+    "github": "https://github.com/ManSaint"
   },
   {
-    "id": "03",
+    "initials": "VH",
+    "avatarBg": "#ccc",
     "name": "Victor Hallstensson",
-    "image": "",
-    "title": "",
-    "shortBio": "",
-    "stack": [],
+    "role": "",
+    "bio": "",
+    "tags": [],
     "competenceTags": [],
-    "links": {
-      "github": "https://github.com/Slictor/",
-      "linkedin": "",
-      "portfolio": ""
-    },
-    "order": 3
+    "linkedIn": "",
+    "portfolio": "",
+    "github": "https://github.com/Slictor/"
   },
   {
-    "id": "04",
-    "name": "Zahra Parhizkari",
-    "image": "",
-    "title": "Fullstack Developer",
-    "shortBio": "System and Full-Stack Developer with broad technical expertise and strong problem-solving skills",
-    "stack": ["JavaScript", "TypeScript", "C#", ".NET", "ASP.NET Core", "React", "Next.js", "Node.js", "Databashantering"],
+    "initials": "ZP",
+    "avatarBg": "#ccc",
+    "name": "Zahra p",
+    "role": "Fullstack Developer",
+    "bio": "Jag är system och fullstackutvecklare med bred teknisk kompetens inom både frontend och backend och lär mig snabbt. Jag arbetar strukturerat, är lösningsorienterad och trivs med att arbeta både självständigt och i agila team med Git, Scrum och effektiv versionshantering.",
+    "tags": ["JavaScript", "TypeScript", "C#", ".NET", "ASP.NET Core", "React", "Next.js", "Node.js", "Databashantering", "Fullstack"],
     "competenceTags": ["Fullstack"],
-    "links": {
-      "github": "https://github.com/zahra64",
-      "linkedin": "https://www.linkedin.com/in/zahra-parhizkari-9967101b7/",
-      "portfolio": ""
-    },
-    "order": 4
+    "linkedIn": "https://www.linkedin.com/in/zahra-parhizkari-9967101b7/",
+    "portfolio": "",
+    "github": "https://github.com/zahra64"
   }
 ]
