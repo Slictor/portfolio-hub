@@ -5,6 +5,7 @@ import { DefaultChatTransport } from "ai";
 import { useEffect, useRef, useState } from "react";
 import ChatInput from "@/components/interview/ChatInput";
 import ChatMessage from "@/components/interview/ChatMessage";
+import InterviewHero from "@/components/interview/InterviewHero";
 import LevelToggle from "@/components/interview/LevelToggle";
 import TopicSelector from "@/components/interview/TopicSelector";
 import type { InterviewLevel, InterviewTopic } from "@/types/interview";
@@ -33,10 +34,7 @@ export default function InterviewPage() {
 
   const handleStart = () => {
     setStarted(true);
-    sendMessage(
-      { text: "Starta intervjun" },
-      { body: { level, topic, questionCount } },
-    );
+    sendMessage({ text: "Starta intervjun" }, { body: { level, topic, questionCount } });
   };
 
   const handleSend = () => {
@@ -55,34 +53,28 @@ export default function InterviewPage() {
   // Config screen
   if (!started) {
     return (
-      <main className="min-h-screen bg-background pt-28 px-6">
-        <div className="max-w-2xl mx-auto">
-          <h1 className="font-serif text-4xl sm:text-5xl text-foreground mb-3">
-            Intervjuträning
-          </h1>
-          <p className="text-muted text-sm leading-relaxed mb-10 max-w-lg">
-            Öva inför tekniska intervjuer med en AI-driven intervjuare. Välj
-            svårighetsgrad och ämne, så kör vi!
-          </p>
+      <main className="min-h-screen bg-background">
+        <InterviewHero sessionCount={0} />
 
+        <div className="max-w-3xl mx-auto px-6 pb-20">
           <div className="mb-8">
-            <h3 className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted mb-3">
-              Svårighetsgrad
-            </h3>
-            <LevelToggle value={level} onChange={setLevel} />
+            <h3 className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted mb-3">Svårighetsgrad</h3>
+            <LevelToggle
+              value={level}
+              onChange={setLevel}
+            />
           </div>
 
           <div className="mb-8">
-            <h3 className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted mb-3">
-              Ämne
-            </h3>
-            <TopicSelector value={topic} onChange={setTopic} />
+            <h3 className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted mb-3">Ämne</h3>
+            <TopicSelector
+              value={topic}
+              onChange={setTopic}
+            />
           </div>
 
           <div className="mb-10">
-            <h3 className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted mb-3">
-              Antal frågor
-            </h3>
+            <h3 className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted mb-3">Antal frågor</h3>
             <div className="inline-flex gap-0 border border-[#2a2a26] rounded-sm overflow-hidden">
               {[5, 10, 15].map((count) => (
                 <button
@@ -90,9 +82,7 @@ export default function InterviewPage() {
                   type="button"
                   onClick={() => setQuestionCount(count)}
                   className={`font-mono text-[11px] tracking-wide px-4 py-2 transition-colors cursor-pointer ${
-                    questionCount === count
-                      ? "bg-accent text-background"
-                      : "text-muted hover:text-foreground"
+                    questionCount === count ? "bg-accent text-background" : "text-muted hover:text-foreground"
                   }`}
                 >
                   {count}
@@ -120,12 +110,9 @@ export default function InterviewPage() {
       <div className="px-6 pb-4 border-b border-[#2a2a26]">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <h1 className="font-serif text-xl text-foreground">
-              Intervjuträning
-            </h1>
+            <h1 className="font-serif text-xl text-foreground">Intervjuträning</h1>
             <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted">
-              {LEVEL_LABELS[level]} · {TOPIC_LABELS[topic]} · {questionCount}{" "}
-              frågor
+              {LEVEL_LABELS[level]} · {TOPIC_LABELS[topic]} · {questionCount} frågor
             </span>
           </div>
           <button
@@ -144,7 +131,10 @@ export default function InterviewPage() {
           {messages
             .filter((m) => !(m.role === "user" && messages.indexOf(m) === 0))
             .map((message) => (
-              <ChatMessage key={message.id} message={message} />
+              <ChatMessage
+                key={message.id}
+                message={message}
+              />
             ))}
           {status === "submitted" && (
             <div className="flex justify-start">
@@ -152,9 +142,7 @@ export default function InterviewPage() {
                 <span className="block font-mono text-[10px] tracking-[0.2em] uppercase text-muted mb-2">
                   Intervjuare
                 </span>
-                <span className="text-muted text-sm animate-pulse">
-                  Skriver...
-                </span>
+                <span className="text-muted text-sm animate-pulse">Skriver...</span>
               </div>
             </div>
           )}
