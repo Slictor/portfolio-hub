@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,8 @@ const dmSerifDisplay = DM_Serif_Display({
 
 export const metadata: Metadata = {
   title: "Lexicon Frontend Portfolio",
-  description: "En samlad klass av frontendutvecklare som är redo att lösa verkliga problem.",
+  description:
+    "En samlad klass av frontendutvecklare som är redo att lösa verkliga problem.",
 };
 
 export default function RootLayout({
@@ -32,9 +34,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${dmSerifDisplay.variable} antialiased`}>
-         <Header />
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${dmSerifDisplay.variable} antialiased`}
+      >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
