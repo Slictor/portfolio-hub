@@ -1,0 +1,31 @@
+[
+  {
+    "id": "b1c2d3e4-1111-4000-8000-000000000001",
+    "companyName": "Spotify",
+    "contactPerson": "Lisa Andersson",
+    "email": "lisa.andersson@spotify.com",
+    "phone": "070-123 45 67",
+    "notes": "Träffade henne på Sthlm Tech Fest. Väldigt öppen för juniora utvecklare.",
+    "createdAt": "2026-03-10T09:30:00.000Z",
+    "updatedAt": "2026-03-10T09:30:00.000Z"
+  },
+  {
+    "id": "b1c2d3e4-2222-4000-8000-000000000002",
+    "companyName": "Klarna",
+    "contactPerson": "Johan Berg",
+    "email": "johan.berg@klarna.com",
+    "notes": "Rekryterare som besökte Lexicon. Vill gärna se portfolios.",
+    "createdAt": "2026-03-11T13:00:00.000Z",
+    "updatedAt": "2026-03-11T13:00:00.000Z"
+  },
+  {
+    "id": "b1c2d3e4-3333-4000-8000-000000000003",
+    "companyName": "Volvo Cars",
+    "contactPerson": "Emma Nilsson",
+    "email": "emma.nilsson@volvocars.com",
+    "phone": "031-987 65 43",
+    "notes": "Tech lead i connected vehicle-teamet. Tipsar om att söka via deras trainee-program.",
+    "createdAt": "2026-03-13T15:45:00.000Z",
+    "updatedAt": "2026-03-13T15:45:00.000Z"
+  }
+]
