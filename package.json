@@ -10,9 +10,13 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@ai-sdk/groq": "^3.0.29",
+    "@ai-sdk/react": "^3.0.118",
+    "ai": "^6.0.116",
     "next": "16.1.7",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-markdown": "^10.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
