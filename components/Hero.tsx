@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative min-h-screen bg-background flex flex-col justify-center px-8 sm:px-16 lg:px-24 overflow-hidden">
       {/* Decorative 2026 */}
       <div
-        className="absolute right-0 top-1/2 -translate-y-1/2 font-serif text-foreground opacity-[0.06] text-[20rem] sm:text-[28rem] lg:text-[36rem] leading-none select-none pointer-events-none"
+        className="absolute right-0 top-1/2 -translate-y-1/2 font-serif text-foreground opacity-[0.06] text-[20vw] leading-none select-none pointer-events-none"
         aria-hidden="true"
       >
         2026
@@ -32,16 +32,20 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p className="text-muted text-base sm:text-lg max-w-md leading-relaxed mb-16">
-          En samlad klass av frontendutvecklare som är redo att lösa verkliga problem. Utforska våra profiler,
-          kompetenser och projekt.
+          En samlad klass av frontendutvecklare som är redo att lösa verkliga
+          problem. Utforska våra profiler, kompetenser och projekt.
         </p>
 
         {/* Stats */}
         <div className="flex gap-16">
           {stats.map((stat) => (
             <div key={stat.label}>
-              <p className="font-serif text-4xl sm:text-5xl text-foreground">{stat.value}</p>
-              <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted mt-1">{stat.label}</p>
+              <p className="font-serif text-4xl sm:text-5xl text-foreground">
+                {stat.value}
+              </p>
+              <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted mt-1">
+                {stat.label}
+              </p>
             </div>
           ))}
         </div>
