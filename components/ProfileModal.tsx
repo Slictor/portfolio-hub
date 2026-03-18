@@ -1,18 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-
-export interface StudentProfile {
-  initials: string;
-  avatarBg: string;
-  name: string;
-  role: string;
-  bio: string;
-  longBio: string;
-  tags: string[];
-  linkedIn?: string;
-  portfolio?: string;
-}
+import { StudentProfile } from "@/types/students";
 
 interface ProfileModalProps {
   student: StudentProfile | null;
@@ -85,7 +74,7 @@ export default function ProfileModal({ student, onClose }: ProfileModalProps) {
           {/* Bio */}
           <div className="mb-8">
             <h3 className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted mb-3">Om mig</h3>
-            <p className="text-foreground/80 leading-relaxed">{student.longBio}</p>
+            <p className="text-foreground/80 leading-relaxed">{student.bio}</p>
           </div>
 
           {/* Technologies */}
