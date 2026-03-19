@@ -143,7 +143,7 @@ export default function JobbPage() {
                 setEditingJob(null);
                 setShowJobForm(true);
               }}
-              className="font-mono text-sm tracking-wide px-6 py-3 bg-[#CAFF4D] text-background rounded-sm hover:bg-[#b8e644] transition-colors cursor-pointer"
+              className="font-mono text-sm tracking-wide px-6 py-3 bg-accent text-background rounded-sm hover:bg-accent/80 transition-colors cursor-pointer"
             >
               Lägg till jobbtips →
             </button>
@@ -156,7 +156,7 @@ export default function JobbPage() {
                 setEditingContact(null);
                 setShowContactForm(true);
               }}
-              className="font-mono text-sm tracking-wide px-6 py-3 bg-[#CAFF4D] text-background rounded-sm hover:bg-[#b8e644] transition-colors cursor-pointer"
+              className="font-mono text-sm tracking-wide px-6 py-3 bg-accent text-background rounded-sm hover:bg-accent/80 transition-colors cursor-pointer"
             >
               Lägg till kontakt →
             </button>
