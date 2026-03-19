@@ -5,7 +5,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen bg-background flex flex-col justify-center px-8 sm:px-16 lg:px-24 overflow-hidden">
+    <section className="relative mt-32 bg-background flex flex-col justify-center px-8 sm:px-16 lg:px-24 overflow-hidden">
       {/* Decorative 2026 */}
       <div
         className="absolute right-0 top-1/2 -translate-y-1/2 font-serif text-foreground opacity-[0.06] text-[20vw] leading-none select-none pointer-events-none"
