@@ -11,6 +11,9 @@ import FilterSection from "@/components/filterSection";
 
 const students = studentsData as StudentProfile[];
 
+const studentCount = students.length;
+const techCount = new Set(students.flatMap((s) => s.competenceTags ?? [])).size;
+
 export default function Home() {
   const [selectedStudent, setSelectedStudent] = useState<StudentProfile | null>(null);
   const [selectedFilter, setSelectedFilter] = useState("All");
@@ -26,7 +29,7 @@ const filteredData =
 
   return (
     <>
-      <Hero />
+      <Hero studentCount={studentCount} techCount={techCount} />
          <section className="px-6 py-16 max-w-7xl mx-auto">
         <FilterSection
           filters={filters}

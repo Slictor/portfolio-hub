@@ -1,7 +1,12 @@
-export default function Hero() {
+interface HeroProps {
+  studentCount: number;
+  techCount: number;
+}
+
+export default function Hero({ studentCount, techCount }: HeroProps) {
   const stats = [
-    { value: "12", label: "STUDENTER" },
-    { value: "6+", label: "TEKNOLOGIER" },
+    { value: String(studentCount), label: "STUDENTER" },
+    { value: String(techCount), label: "TEKNOLOGIER" },
   ];
 
   return (
