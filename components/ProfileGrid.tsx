@@ -8,7 +8,7 @@ interface ProfileGridProps {
 export default function ProfileGrid({ children, className }: ProfileGridProps) {
   return (
     <div
-      className={`grid gap-6 items-start ${className ?? ""}`}
+      className={`grid gap-4 w-full items-start ${className ?? ""}`}
       style={{ gridTemplateColumns: "repeat(auto-fit, minmax(18rem, 1fr))" }}
     >
       {children}
