@@ -51,7 +51,7 @@ export default function ChatInput({
         className={`font-mono text-[11px] tracking-wide px-5 py-3 rounded-sm transition-colors cursor-pointer ${
           isLoading
             ? "bg-red-500/80 text-white hover:bg-red-500"
-            : "bg-[#CAFF4D] text-background hover:bg-[#b8e644]"
+            : "bg-accent text-background hover:bg-accent/80"
         } disabled:opacity-30 disabled:cursor-not-allowed`}
         disabled={!isLoading && !input.trim()}
       >
